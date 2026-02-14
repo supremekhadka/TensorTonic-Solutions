@@ -4,12 +4,5 @@ def matrix_trace(A):
     """
     Compute the trace of a square matrix (sum of diagonal elements).
     """
-    rows = len(A)
-    cols = len(A[0])
-
-    sum = 0
+    return np.sum(np.diag(A))
   
-    for i in range(rows):
-      sum += A[i][i]
-
-    return sum
